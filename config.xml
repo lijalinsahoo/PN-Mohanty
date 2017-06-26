@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="in.swarnashanti.pnapp" version="3.1.4" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="in.swarnashanti.pnapp" version="3.1.5" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>PN App</name>
     <description>
        Official App of PN Mohanty.
@@ -129,6 +129,12 @@
     </platform>
     
     <platform name="winphone">
+        
+        <preference name="phonegap-version" value="cli-6.0.0" />
+        
+        <config-file platform="ios" parent="NSPhotoLibraryUsageDescription" mode="replace">
+  <string> We actually not using camera but have just included the plugin if in case we may require in the upgrade version </string>
+</config-file>
       
     </platform>
     
